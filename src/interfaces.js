@@ -75,6 +75,10 @@ Module.SlideshowModule.ISlide = {
 	 **/
 	image: null,
 
+	/**
+	 * Module.SlideshowModule.ISlide.addClass(className) -> Module.SlideshowModule.ISlide
+	 * - className (String): HTML tag class name to add to all affected elements
+	 **/
 	addClass: function(className) {},
 
 	/**
@@ -120,6 +124,10 @@ Module.SlideshowModule.ISlide = {
 	 **/
 	prevSlide: function() {},
 
+	/**
+	 * Module.SlideshowModule.ISlide.removeClass(className) -> Module.SlideshowModule.ISlide
+	 * - className (String): HTML tag class name to remove from all affected elements
+	 **/
 	removeClass: function(className) {},
 
 	/**
@@ -130,7 +138,7 @@ Module.SlideshowModule.ISlide = {
 	setCaption: function(caption) {},
 
 	/**
-	 * Module.SlideshowModule.ISlide.setContainer(container)
+	 * Module.SlideshowModule.ISlide.setContainer(container) -> Module.SlideshowModule.ISlide
 	 *
 	 * Sets the container for this slide.
 	 **/

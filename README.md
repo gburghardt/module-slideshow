@@ -8,10 +8,7 @@ of features.
 - Custom transitions from one slide to the next
 - Transitions are available for the following JavaScript libraries:
   - jQuery (fade in/out, slide in/out)
-  - Mootools (fade in/out, slide in/out)
-  - Prototype (fade in/out, slide in/out)
-  - Dojo (fade in/out, slide in/out)
-  - YUI (fade in/out, slide in/out)
+  - Zepto (fade in/out, slide in/out)
 - Flexible markup structure. Currently two basic structures are supported, but
   additional structures can be supported by writing your own Slide class, as
   long as it supports the `Module.SlideshowModule.ISlide` interface.

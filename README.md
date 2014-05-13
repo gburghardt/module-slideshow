@@ -49,8 +49,8 @@ of features.
 - [module-utils][module-utils]
 - [Oxydizr][oxydizr] Front Controller
 
-A simple `bower install` from the command line will download all the external
-dependencies.
+A simple `bower install module-slideshow` from the command line will download
+all the external dependencies.
 
 ## Downloading Slideshow Module
 
@@ -171,6 +171,9 @@ A psuedo-code definition of this interface can be found in `src/interfaces.js`.
 
 #### Public Methods
 
+- `addClass(className)`: Adds a HTML tag class name to all affected elements
+  - Arguments: `String` - The class name to add
+  - Returns: `Module.SlideshowModule.ISlide`
 - `firstSlide()`: Returns the first slide in this series.
   - Arguments: none
   - Returns: `Module.SlideshowModule.ISlide`
@@ -187,12 +190,18 @@ A psuedo-code definition of this interface can be found in `src/interfaces.js`.
   acted upon by the slide transition.
   - Arguments: none
   - Returns: `Array<HTMLElement>`
+- `removeClass(className)`: Removes a HTML tag class name from all affected elements
+  - Arguments: `String` - The class name to remove
+  - Returns: `Module.SlideshowModule.ISlide`
 - `setCaption(caption)`: Sets the `caption` property
   - Arguments: `HTMLElement` - The new caption
-  - Returns: `undefined`
+  - Returns: `Module.SlideshowModule.ISlide`
+- `setContainer(container)`: Sets the container property
+  - Argments: `HTMLElement` - The HTML element that contains all the slides
+  - Returns: `Module.SlideshowModule.ISlide`
 - `setImage(image)`: Sets the `image` property
   - Arguments: `HTMLElement` - The new image
-  - Returns: `undefined`
+  - Returns: `Module.SlideshowModule.ISlide`
 
 #### Creating Your Own Slide Class
 

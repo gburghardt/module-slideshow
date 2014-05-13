@@ -1,9 +1,9 @@
 {
-	"name": "module-selection",
-	"description": "",
-	"homepage": "https://github.com/gburghardt/module-selection",
+	"name": "module-slideshow",
+	"description": "Easily create modular slideshows",
+	"homepage": "https://github.com/gburghardt/module-slideshow",
     "version": "1.0.0",
-	"repository": { "type": "git", "url": "https://github.com/gburghardt/module-selection.git" },
+	"repository": { "type": "git", "url": "https://github.com/gburghardt/module-slideshow.git" },
 	"authors": [
 		"Greg Burghardt <greg_burghardt@yahoo.com>"
 	],

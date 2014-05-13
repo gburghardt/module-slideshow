@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Demo: Slideshow</title>
+	<link rel="stylesheet" type="text/css" href="../css/slideshow.css">
+</head>
+<body>
+
+	<h1>Slideshow Module Demo</h1>
+
+	<div style="float: left; margin-right: 1em">
+		<h2>Slideshow using a Definition List</h2>
+
+		<div class="module slideshow" id="slide-1">
+			<em class="slideshow-fullscreen-note">Press ESCAPE to exit fullscreen mode.</em>
+			<dl class="slideshow-container">
+				<dt class="slideshow-current"><img src="./images/thumbs/A.png" data-fullscreen-src="./images/full/A.png" alt=""></dt>
+				<dd class="slideshow-current">
+					Nullam eget pellentesque augue. Phasellus sodales ultricies nibh ut imperdiet? Donec aliquet, lectus
+					in faucibus ornare, arcu odio vulputate metus, a molestie lacus purus ac metus. Phasellus posuere
+					condimentum elit placerat tincidunt. Nullam eget pellentesque augue. Phasellus sodales ultricies
+					nibh ut imperdiet? Donec aliquet, lectus in faucibus ornare, arcu odio vulputate metus, a molestie
+					lacus purus ac metus. Phasellus posuere condimentum elit placerat tincidunt. Nullam eget
+					pellentesque augue. Phasellus sodales ultricies nibh ut imperdiet? Donec aliquet, lectus in faucibus
+					ornare, arcu odio vulputate metus, a molestie lacus purus ac metus. Phasellus posuere condimentum
+					elit placerat tincidunt.
+				</dd>
+
+				<dt><img src="./images/thumbs/B.png" data-fullscreen-src="./images/full/B.png" alt=""></dt>
+				<dd>Aliquam at dolor et erat lobortis egestas sed id mi.</dd>
+
+				<dt><img src="./images/thumbs/C.png" data-fullscreen-src="./images/full/C.png" alt=""></dt>
+				<dd>Donec lectus quam, gravida id neque et, tristique congue metus. Integer ut bibendum magna, in tempus ipsum.</dd>
+			</dl>
+
+			<p class="slideshow-tools"><!--
+			     --><span>Captions:
+			     	<a href="#" data-actions="slideshow1.captionsOn" class="slideshow-tool-captions-on" style="display: none" title="Turn captions on">Off</a>
+			     	<a href="#" data-actions="slideshow1.captionsOff" class="slideshow-tool-captions-off" title="Turn captions off">On</a>
+			     </span><!--
+				 --><a href="#" data-actions="slideshow1.prev" class="slideshow-tool-prev" title="Previous Slide"></a><!--
+				 --><a href="#" data-actions="slideshow1.play" class="slideshow-tool-play" title="Play"></a><!--
+				 --><a href="#" data-actions="slideshow1.pause" class="slideshow-tool-pause" title="Pause"></a><!--
+				 --><a href="#" data-actions="slideshow1.next" class="slideshow-tool-next" title="Next Slide"></a><!--
+				 --><a href="#" data-actions="slideshow1.enterFullScreen" class="slideshow-tool-full" title="Show Full Screen"></a><!--
+				 --><a href="#" data-actions="slideshow1.exitFullScreen" class="slideshow-tool-small" title="Exit Full Screen"></a><!--
+			 --></p>
+		</div>
+	</div>
+
+	<div style="float: left">
+		<h2>Slideshow using figures and captions.</h2>
+
+		<div class="module slideshow" id="slide-2">
+			<em class="slideshow-fullscreen-note">Press ESCAPE to exit fullscreen mode.</em>
+			<div class="slideshow-container">
+				<figure class="slideshow-current">
+					<img src="./images/thumbs/A.png" data-fullscreen-src="./images/full/A.png" alt="">
+					<figcaption>
+						Nullam eget pellentesque augue. Phasellus sodales ultricies nibh ut imperdiet? Donec aliquet, lectus
+						in faucibus ornare, arcu odio vulputate metus, a molestie lacus purus ac metus. Phasellus posuere
+						condimentum elit placerat tincidunt. Nullam eget pellentesque augue. Phasellus sodales ultricies
+						nibh ut imperdiet? Donec aliquet, lectus in faucibus ornare, arcu odio vulputate metus, a molestie
+						lacus purus ac metus. Phasellus posuere condimentum elit placerat tincidunt. Nullam eget
+						pellentesque augue. Phasellus sodales ultricies nibh ut imperdiet? Donec aliquet, lectus in faucibus
+						ornare, arcu odio vulputate metus, a molestie lacus purus ac metus. Phasellus posuere condimentum
+						elit placerat tincidunt.
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img src="./images/thumbs/B.png" data-fullscreen-src="./images/full/B.png" alt="">
+					<figcaption>Aliquam at dolor et erat lobortis egestas sed id mi.</figcaption>
+				</figure>
+
+				<figure>
+					<img src="./images/thumbs/C.png" data-fullscreen-src="./images/full/C.png" alt="">
+					<figcaption>Donec lectus quam, gravida id neque et, tristique congue metus. Integer ut bibendum magna, in tempus ipsum.</figcaption>
+				</figure>
+			</div>
+			<p class="slideshow-tools"><!--
+			     --><span>Captions:
+			     	<a href="#" data-actions="slideshow2.captionsOn" class="slideshow-tool-captions-on" style="display: none" title="Turn captions on">Off</a>
+			     	<a href="#" data-actions="slideshow2.captionsOff" class="slideshow-tool-captions-off" title="Turn captions off">On</a>
+			     </span><!--
+				 --><a href="#" data-actions="slideshow2.prev" class="slideshow-tool-prev" title="Previous Slide"></a><!--
+				 --><a href="#" data-actions="slideshow2.play" class="slideshow-tool-play" title="Play"></a><!--
+				 --><a href="#" data-actions="slideshow2.pause" class="slideshow-tool-pause" title="Pause"></a><!--
+				 --><a href="#" data-actions="slideshow2.next" class="slideshow-tool-next" title="Next Slide"></a><!--
+				 --><a href="#" data-actions="slideshow2.enterFullScreen" class="slideshow-tool-full" title="Show Full Screen"></a><!--
+				 --><a href="#" data-actions="slideshow2.exitFullScreen" class="slideshow-tool-small" title="Exit Full Screen"></a><!--
+			 --></p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../bower_components/oxydizr/src/Oxydizr.js"></script>
+	<script type="text/javascript" src="../bower_components/oxydizr/src/Oxydizr/FrontController.js"></script>
+	<script type="text/javascript" src="../bower_components/module-base/src/module/base.js"></script>
+	<script type="text/javascript" src="../bower_components/module-utils/dist/module-utils-base.concat.js"></script>
+	<script type="text/javascript" src="../bower_components/module-utils/dist/module-utils-element_store.concat.js"></script>
+	<script type="text/javascript" src="../bower_components/module-utils/dist/module-utils-events.concat.js"></script>
+	<!--
+	<script type="text/javascript" src="../bower_components/mocking_bird/src/mocking_bird.js"></script>
+	<script type="text/javascript" src="../bower_components/mocking_bird/src/mocking_bird/xml_http_request.js"></script>
+	-->
+	<script type="text/javascript" src="../src/module/slideshow_module.js"></script>
+	<script type="text/javascript">
+		var frontController = new Oxydizr.FrontController().init(document.documentElement);
+
+		var slideshow1 = new Module.SlideshowModule()
+			.init("slide-1", { autoPlay: false });
+		slideshow1.controllerId = "slideshow1";
+		frontController.registerController(slideshow1);
+
+		var slideshow2 = new Module.SlideshowModule()
+			.init("slide-2", { autoPlay: false });
+		slideshow2.controllerId = "slideshow2";
+		frontController.registerController(slideshow2);
+	</script>
+</body>
+</html>

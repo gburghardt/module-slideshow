@@ -10,8 +10,7 @@ Module.SlideshowModule.jQueryCrossFadeTransition = function ($) {
 		start: function(from, to, direction, callback, context) {
 			context = context || this;
 
-			var i = 0,
-			    $to = $(to.getTransitionElements()),
+			var $to = $(to.getTransitionElements()),
 			    $from = $(from.getTransitionElements()),
 			    done = function() {
 			    	$to.css({
@@ -60,4 +59,5 @@ Module.SlideshowModule.jQueryCrossFadeTransition = function ($) {
 	};
 
 	return jQueryCrossFadeTransition;
-}(jQuery);
+
+}(this.jQuery || this.Zepto);

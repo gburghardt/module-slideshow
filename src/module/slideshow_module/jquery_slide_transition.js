@@ -66,4 +66,4 @@ Module.SlideshowModule.jQuerySlideTransition = function ($) {
 	};
 
 	return jQuerySlideTransition;
-}(jQuery);
+}(this.jQuery || this.Zepto);

@@ -425,7 +425,7 @@ AbstractSlide.prototype = {
 	constructor: AbstractSlide,
 
 	addClass: function(className) {
-		this._alterClassName("add", className);
+		return this._alterClassName("add", className);
 	},
 
 	_alterClassName: function(method, className) {
@@ -434,6 +434,8 @@ AbstractSlide.prototype = {
 		if (this.caption) {
 			this.caption.classList[method](className);
 		}
+
+		return this;
 	},
 
 	_createNextSlide: function() {
@@ -517,7 +519,7 @@ AbstractSlide.prototype = {
 	},
 
 	removeClass: function(className) {
-		this._alterClassName("remove", className);
+		return this._alterClassName("remove", className);
 	},
 
 	setCaption: function(caption) {
@@ -540,6 +542,7 @@ AbstractSlide.prototype = {
 
 	setContainer: function(container) {
 		this.container = container;
+		return this;
 	}
 
 };
@@ -551,7 +554,7 @@ var DefinitionListSlide = AbstractSlide.extend({
 		},
 
 		getTransitionElements: function() {
-			return [this.image];
+			return this.caption ? [this.image, this.caption] : [this.image];
 		},
 
 		_createNextSlide: function() {
@@ -676,6 +679,7 @@ SlideshowModule.AbstractSlide = AbstractSlide;
 SlideshowModule.FigureSlide = FigureSlide;
 SlideshowModule.DefinitionListSlide = DefinitionListSlide;
 SlideshowModule.SlideFactory = SlideFactory;
+SlideshowModule.ShowHideTransition = ShowHideTransition;
 
 return SlideshowModule;
 

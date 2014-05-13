@@ -19,7 +19,8 @@ Module.SlideshowModule.jQueryCrossFadeTransition = function ($) {
 			    		position: "",
 			    		top: "",
 			    		left: "",
-			    		"margin-left": ""
+			    		marginLeft: "",
+			    		width: ""
 			    	});
 
 					from.showCaption();
@@ -35,7 +36,7 @@ Module.SlideshowModule.jQueryCrossFadeTransition = function ($) {
 				top: 0,
 				left: "50%",
 				width: "100%"
-			}).css("margin-left", $to.width() / 2 * -1);
+			}).css("marginLeft", $to.width() / 2 * -1);
 
 			from.hideCaption();
 			to.hideCaption();

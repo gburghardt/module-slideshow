@@ -49,7 +49,7 @@ Module.SlideshowModule.jQuerySlideTransition = function ($) {
 				width: "100%"
 			});
 
-			$from.animate({ left: distance * direction * -1 }, {
+			$from.animate({ left: distance * -1 }, {
 				duration: this.duration,
 				queue: false
 			});
